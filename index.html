@@ -696,21 +696,74 @@ footer {
 <!-- RESUME -->
 <section id="resume">
   <div class="s-label">05 — Resume</div>
-  <h2 class="s-title">View or download<br/><em>my resume</em></h2>
+  <h2 class="s-title">View<br/><em>my resume</em></h2>
   <div class="s-rule"></div>
+
   <div class="browser resume-browser reveal">
     <div class="browser-bar">
-      <div class="bdot r"></div><div class="bdot y"></div><div class="bdot g"></div>
+      <div class="bdot r"></div>
+      <div class="bdot y"></div>
+      <div class="bdot g"></div>
       <div class="browser-url">Marzia_Tahsin_Resume.pdf</div>
     </div>
+
     <div class="resume-body">
-      <div class="resume-doc">📄 Marzia_Tahsin_Resume.pdf</div>
-      <p>Education, experience, research, projects, certifications, and technical skills in one document.</p>
-      <a href="Marzia_Tahsin_Resume.pdf" download class="btn btn-solid" style="background:var(--mint);border-color:var(--mint);color:var(--navy);">Download Resume</a>
+      <div class="resume-doc">Marzia_Tahsin_Resume.pdf</div>
+
+      <p>
+        Education, experience, research, projects, certifications, and technical skills in one document.
+      </p>
+
+      <a 
+        href="Marzia_Tahsin_Resume.pdf" 
+        target="_blank" 
+        class="btn btn-solid resume-btn"
+      >
+        View Resume
+      </a>
     </div>
   </div>
 </section>
 
+.resume-body {
+  background: var(--navy);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.resume-doc {
+  width: 100%;
+  max-width: 340px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: .82rem;
+  color: var(--sage);
+  text-align: center;
+}
+
+.resume-body p {
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  color: var(--sage);
+  text-align: center;
+  line-height: 1.7;
+  max-width: 460px;
+}
+
+.resume-btn {
+  background: var(--mint) !important;
+  border-color: var(--mint) !important;
+  color: var(--navy) !important;
+}
+  
 <!-- CONTACT -->
 <section id="contact">
   <div class="s-label">06 — Contact</div>
